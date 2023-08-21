@@ -48,8 +48,8 @@ function applyCoupon() {
     const coupon = document.getElementById("coupon_input").value;
 
     if (coupon === "SELL200") {
-        const total = document.getElementById("total");
-        const newDiscount = parseFloat((20 / 200) * total.innerText).toFixed(2);
+        const total_price = document.getElementById("total_price");
+        const newDiscount = parseFloat((20 / 200) * total_price.innerText).toFixed(2);
         console.log(newDiscount);
 
         document.getElementById("discount").innerText = newDiscount;
