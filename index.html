@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- banner-section -->
+    <section>
+      <div class="flex flex-col lg:flex-row bg-[#F9F6E2] lg:h-screen items-center justify-center">
+
+        <div class="banner-text text-center">
+          <h4 class="text-2xl font-medium">---SALE FEVER---</h4>
+
+          <h1 class="text-5xl font-bold mt-10">Purchase TK 200 or
+            <br>
+            above & get <span class="text-[#E527B2]">20% off</span>
+          </h1>
+
+          <small class="flex gap-5 justify-center items-center mt-10">
+            <p class="font-medium text-xl">Use Promo Code</p>
+            <button class="bg-[#E527B2] rounded w-28 h-9 text-white text-lg">SELL200</button>
+          </small>
+
+        </div>
+
+        <div class="banner-image">
+          <img class="w-[500px]" src="/images/Summer 1.png" alt="">
+        </div>
+
+      </div>
+    </section>
+
+  </header>
+
+
+  <main class="bg-gray-100 flex items-center justify-center">
+
+    <section class="mx-20">
+      <div class="lg:flex gap-10">
+
+        <div class="cards">
+
+          <div class="card-1">
+            <div class="mt-28 mb-12">
+              <h1 class="text-3xl font-bold">Kitchenware</h1>
+            </div>
+
+            <div class="lg:flex gap-10">
+              <div onclick="card_1()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img src="/images/prod1.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_1_name">K. Accessories</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_1_taka">39.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+              <div onclick="card_2()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img class="w-[141px]" src="/images/prod2.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_2_name">K. Accessories</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_2_taka">25.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+              <div onclick="card_3()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img src="/images/prod3.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_3_name">Home Cooker</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_3_taka">49.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="card-2 mb-32">
+            <div class="mt-20 mb-12">
+              <h1 class="text-3xl font-bold">Sportswear</h1>
+            </div>
+
+            <div class="lg:flex gap-10">
+              <div onclick="card_4()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img src="/images/prod4.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_4_name">Sports Back Cap</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_4_taka">49.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+              <div onclick="card_5()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img class="w-[108px]" src="/images/prod5.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_5_name">Full Jersey Set</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_5_taka">69.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+              <div onclick="card_6()">
+                <div class="card w-64 bg-base-100 shadow-2xl rounded-md border">
+                  <figure class="bg-gray-100 m-5 rounded-md">
+                    <img class="w-32" src="/images/prod6.png" alt="" />
+                  </figure>
+                  <div class="rating rating-sm mx-auto mb-2">
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="mx-auto mb-2">
+                    <h4 class="text-base font-medium" id="card_6_name">Sports cates</h4>
+                  </div>
+
+                  <small class="mx-auto text-gray-500 mb-2">
+                    <span id="card_6_taka">159.00</span>TAKA
+                  </small>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="mt-[198px]">
+
+          <div class="bg-white h-auto w-60 rounded-md px-3 py-5">
+            <h3 class="text-base font-medium">Have coupon?</h3>
+            <div class="flex">
+              <input id="coupon_input" class="border h-10 w-36 rounded-s-md outline-none" placeholder="  Coupon code"
+                type="text">
+              <button disabled onclick="applyCoupon()" id="apply_button"
+                class="bg-[#E527B2] text-white h-10 w-20 rounded-e">Apply</button>
+            </div>
+          </div>
+
+          <div class="bg-white mt-7 w-60 px-3 py-5 rounded-md relative text-lg font-medium">
+            <ol id="list_items">
+
+            </ol>
+
+            <hr class="my-2">
+
+            <div>
+              <h3>Total price: <span class="text-gray-400" id="total_price">0.00</span><span
+                  class="text-gray-400">TK</span></h3>
+              <h3>Discount: <span class="text-gray-400" id="discount">0.00</span><span class="text-gray-400">TK</span>
+              </h3>
+              <h3>Total: <span class="text-gray-400" id="total">0.00</span><span class="text-gray-400">TK</span></h3>
+            </div>
+
+            <hr class="my-2">
+
+            <div class="text-center absolute left-4">
+              <button disabled onclick="my_modal_1.showModal()" id="purchase_button"
+                class="bg-[#E527B2] text-white w-52 h-10 rounded-md">Make Purchase</button>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+    <dialog id="my_modal_1" class="modal text-center">
+      <form method="dialog" class="modal-box">
+        <div class="flex items-center justify-center">
+          <img src="/images/congo.png" class="w-32" alt="">
+        </div>
+        <h2 class="text-3xl font-bold">Congratulations</h2>
+        <p class="text-gray-500 text-center text-sm mt-4">Your Purchase the product</p>
+        <div class="modal-action flex items-center justify-center">
+          <!-- if there is a button in form, it will close the modal -->
+          <button onclick="clearAll()" class="btn bg-[#E527B2] text-white">Go Home</button>
+        </div>
+      </form>
+    </dialog>
+
+
+  </main>
+
+
+
+
+
+  <script src="/dynamic.js"></script>
+</body>
+
+</html>
